@@ -79,7 +79,7 @@ The training pipeline includes:
 - **Fine-tuning BERT (Exp. 8)**: High memory consumption due to the model's size.
 
 ### Learning Curve Observations
-- **LSTMs**: Stable learning, less prone to overfitting.
+- **LSTMs**: Stable learning, less likely to overfit.
 - **Transformers**: Faster convergence but higher instability, risking overfitting.
 - **Fine-tuning BERT**: Slow convergence due to the model's size, requiring more epochs.
 
@@ -87,16 +87,3 @@ The training pipeline includes:
 - Use **Experience 1** for time-sensitive applications.
 - Choose **Experience 4** for the best generalization.
 - For larger datasets, Transformers and fine-tuned BERT are likely to outperform due to their scalability.
-
-## Usage
-1. **Install Dependencies**:
-   ```bash
-   pip install torch transformers datasets matplotlib
-   ```
-2. **Run Training and Evaluation**:
-   Use the Jupyter Notebook `main (1).ipynb` to execute the training pipeline and generate plots.
-
-3. **Modify Architectures**:
-   The `lstm.py` and `transformer.py` files can be adapted to explore different configurations.
-
---- 
